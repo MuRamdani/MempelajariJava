@@ -9,7 +9,7 @@ import java.util.Locale;
     hasil_rata_rata=(int) (bil1+bil2);    
     rata_rata= (int) (hasil_rata_rata /2); 
     
-    gantiformat=NumberFormat.getNumberInstance(Locale.ENGLISH).format(jumlah);
+    gantiformat=NumberFormat.getNumberInstance(Locale.ENGLISH).format(jumlah); //(jumlah) ini sesuai sama tipe data variabel yang mau diubah ke format mata uang)//
     token=new StringTokenizer(gantiformat,".");
     gantiformat=token.nextToken();
     gantiformat=gantiformat.replace(',', '.');
