@@ -1,0 +1,16 @@
+//Menambahkan Format kedalam java
+
+import java.text.NumberFormat;
+import java.util.StringTokenizer;
+import java.util.Locale;
+
+//contohnya 
+    jumlah=Integer.parseInt(Rata_Rata.getText());
+    hasil_rata_rata=(int) (bil1+bil2);    
+    rata_rata= (int) (hasil_rata_rata /2); 
+    
+    gantiformat=NumberFormat.getNumberInstance(Locale.ENGLISH).format(jumlah);
+    token=new StringTokenizer(gantiformat,".");
+    gantiformat=token.nextToken();
+    gantiformat=gantiformat.replace(',', '.');
+    Keterangan.setText(gantiformat); 
